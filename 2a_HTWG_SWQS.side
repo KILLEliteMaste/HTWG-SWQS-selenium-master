@@ -1,0 +1,124 @@
+{
+  "id": "6215221f-48d6-4318-99eb-7da49ee7fe7f",
+  "version": "2.0",
+  "name": "HTWG_SWQS",
+  "url": "https://www.htwg-konstanz.de/",
+  "tests": [{
+    "id": "46d2a339-ab45-4340-a5ef-ee12b7df8aa2",
+    "name": "01_HTWG_Eigl_Search",
+    "commands": [{
+      "id": "98dc30d9-f0ee-43c5-818b-2c091bc68363",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.htwg-konstanz.de/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "430725a4-816f-4826-a4d8-c709258b29ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92f49fb1-2e27-4065-9d6e-44757e71376c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.magnifier",
+      "targets": [
+        ["css=.magnifier", "css:finder"],
+        ["xpath=//a[contains(@href, '#search')]", "xpath:href"],
+        ["xpath=//nav/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0c570c0-3936-44af-8e97-5cf8e3232c01",
+      "comment": "",
+      "command": "type",
+      "target": "css=.search-input input",
+      "targets": [
+        ["css=.search-input input", "css:finder"],
+        ["xpath=(//input[@name='searchvalue'])[2]", "xpath:attributes"],
+        ["xpath=//div/form/input", "xpath:position"]
+      ],
+      "value": "Eiglsperger"
+    }, {
+      "id": "520b37ec-f611-4e32-889c-d92a66c35abe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-input .button",
+      "targets": [
+        ["css=.search-input .button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Suche')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2552dc72-8d2a-4af1-ac4d-601f90998ed7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Eiglsperger",
+      "targets": [
+        ["linkText=Eiglsperger", "linkText"],
+        ["css=li:nth-child(3) .results-topic > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Eiglsperger')]", "xpath:link"],
+        ["xpath=//div[@id='search-results']/section/ul/li/ul/h5/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/hochschule/fakultaeten/informatik/orga/professoren/eiglsperger/')]", "xpath:href"],
+        ["xpath=//h5/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Eiglsperger')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b97a21e-7a72-45e0-a0fc-a9e1da963157",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='c7471']/p", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7b39af0-d267-477f-bed4-4589cedeedf5",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='c7471']/p", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d8068f6-3d57-4cab-aca5-5f9791e450ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='c7471']/p", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79c86677-b2d3-438e-8c7c-32120573ddde",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//*[@id=\"c7471\" and contains(.,'Software-Qualitätssicherung')]/p[1]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fe7dd2d4-eb60-4d1d-b8ef-4281093cd6dc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["46d2a339-ab45-4340-a5ef-ee12b7df8aa2"]
+  }],
+  "urls": ["https://www.htwg-konstanz.de/"],
+  "plugins": []
+}

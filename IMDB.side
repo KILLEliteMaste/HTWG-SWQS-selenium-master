@@ -1,0 +1,116 @@
+{
+  "id": "50532e5d-c662-4b61-8ed6-80e54791179d",
+  "version": "2.0",
+  "name": "IMDB",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "d0dc47c1-5cee-40a9-9a36-d62b1ee1b6d4",
+    "name": "Pulp Fiction Rating",
+    "commands": [{
+      "id": "247fecd9-084c-4213-83b6-d441151defd0",
+      "comment": "",
+      "command": "open",
+      "target": "/?ref_=nv_home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1ddb7a7-6324-446b-9181-adc8b2f4596a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11c52f2f-06f6-4c6c-bd1b-54037fbd2cfc",
+      "comment": "",
+      "command": "click",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83f1a9e7-a0b0-480d-b396-4abc02b4399d",
+      "comment": "",
+      "command": "type",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "pulp fiction"
+    }, {
+      "id": "b1af05ce-4e64-4f70-8625-73c3038bf541",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "12ea9965-ffa8-43d5-8317-3fc5da921c85",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pulp Fiction",
+      "targets": [
+        ["linkText=Pulp Fiction", "linkText"],
+        ["css=.findSection:nth-child(3) .findResult:nth-child(1) > .result_text > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Pulp Fiction')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt0110912/?ref_=fn_al_tt_1')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pulp Fiction')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d74d1a2-6e6b-4404-a920-079e3d45415b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong > span",
+      "targets": [
+        ["css=strong > span", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[2]/div/div/div/div/strong/span", "xpath:idRelative"],
+        ["xpath=//strong/span", "xpath:position"],
+        ["xpath=//span[contains(.,'8,9')]", "xpath:innerText"]
+      ],
+      "value": "8,9"
+    }, {
+      "id": "a42e6fb5-5454-4c59-90b4-9709b65e3001",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.title_wrapper > h1",
+      "targets": [
+        ["css=.title_wrapper > h1", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[2]/div/div[2]/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Pulp Fiction (1994)')]", "xpath:innerText"]
+      ],
+      "value": "Pulp Fiction (1994)"
+    }]
+  }],
+  "suites": [{
+    "id": "1d48feaa-c82f-455b-a939-5cd9e7328a80",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d0dc47c1-5cee-40a9-9a36-d62b1ee1b6d4"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}

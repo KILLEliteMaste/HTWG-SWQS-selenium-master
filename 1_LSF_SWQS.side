@@ -1,0 +1,288 @@
+{
+  "id": "976775ab-bb73-4016-a7b7-ea4d050f85da",
+  "version": "2.0",
+  "name": "LSF_SWQS",
+  "url": "https://lsf.htwg-konstanz.de/",
+  "tests": [{
+    "id": "396022be-3559-48af-a02b-2c26e7338232",
+    "name": "01_Room_Check",
+    "commands": [{
+      "id": "ccf7236c-baa3-4cd4-bd4b-0bdf7b2e2a8f",
+      "comment": "",
+      "command": "open",
+      "target": "https://lsf.htwg-konstanz.de/qisserver/rds?state=user&type=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dcac52d-74ed-49a9-aa6b-de607d121aed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a74ab59-19f0-4fb6-9763-950aad256929",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Veranstaltungen",
+      "targets": [
+        ["linkText=Veranstaltungen", "linkText"],
+        ["css=.links2:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Veranstaltungen')]", "xpath:link"],
+        ["xpath=//div[@id='wrapper']/div[4]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lsf.htwg-konstanz.de/qisserver/rds?state=user&type=8&topitem=lectures&breadCrumbSource=portal')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Veranstaltungen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebc75e2f-b18a-46bc-90ab-4f93161e894e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Suche nach Veranstaltungen",
+      "targets": [
+        ["linkText=Suche nach Veranstaltungen", "linkText"],
+        ["css=.menueListStyle:nth-child(3) > .auflistung", "css:finder"],
+        ["xpath=//a[contains(text(),'Suche nach Veranstaltungen')]", "xpath:link"],
+        ["xpath=//div[@id='makronavigation']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lsf.htwg-konstanz.de/qisserver/rds?state=change&type=5&moduleParameter=veranstaltungSearch&nextdir=change&next=search.vm&subdir=veranstaltung&_form=display&function=search&clean=y&category=veranstaltung.search&navigationPosition=lectures%2CsearchLectures&breadcrumb=searchLectures&topitem=lectures&subitem=searchLectures')]", "xpath:href"],
+        ["xpath=//ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Suche nach Veranstaltungen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e12196e-44c2-480a-9ef1-e429da6ab9ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=veranstaltung.dtxt",
+      "targets": [
+        ["id=veranstaltung.dtxt", "id"],
+        ["name=veranstaltung.dtxt", "name"],
+        ["css=#veranstaltung\\.dtxt", "css:finder"],
+        ["xpath=//input[@id='veranstaltung.dtxt']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/div/form/fieldset[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fb2719d-76f9-48a3-85b3-33066bc4c9d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=veranstaltung.dtxt",
+      "targets": [
+        ["id=veranstaltung.dtxt", "id"],
+        ["name=veranstaltung.dtxt", "name"],
+        ["css=#veranstaltung\\.dtxt", "css:finder"],
+        ["xpath=//input[@id='veranstaltung.dtxt']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/div/form/fieldset[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Software Qualitätssicherung"
+    }, {
+      "id": "6c425269-b7e2-4bdc-8e2d-9bcfb6395e46",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_STG",
+      "targets": [
+        ["name=search_STG", "name"],
+        ["css=div:nth-child(11) > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='search_STG']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/div/form/fieldset[2]/div[9]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "706adbea-6f7f-48b5-a449-229afa7f4919",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Angewandte Informatik (Bachelor), Abschluss 84,",
+      "targets": [
+        ["linkText=Angewandte Informatik (Bachelor), Abschluss 84,", "linkText"],
+        ["css=fieldset > div:nth-child(5) > .regular", "css:finder"],
+        ["xpath=//a[contains(text(),'Angewandte Informatik (Bachelor), Abschluss 84,')]", "xpath:link"],
+        ["xpath=(//a[@name='A'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/fieldset[2]/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lsf.htwg-konstanz.de/qisserver/rds?state=change&type=5&moduleParameter=veranstaltungSearch&nextdir=change&next=search.vm&subdir=veranstaltung&_form=display&topitem=lectures&subitem=searchLectures&function=search&field=STG&k_abstgv.abstgvnr=4511&idcol=k_abstgv.abstgvnr&idval=4511&purge=n&getglobal=n&text=Angewandte+Informatik+%28Bachelor%29%2C+Abschluss+84%2C')]", "xpath:href"],
+        ["xpath=//fieldset[2]/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Angewandte Informatik (Bachelor), Abschluss 84,')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2d8e3f0-0ae8-423b-bd4f-2acf1f9426a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(19)",
+      "targets": [
+        ["css=input:nth-child(19)", "css:finder"],
+        ["xpath=(//input[@name='search_start'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/div/form/input[14]", "xpath:idRelative"],
+        ["xpath=//input[14]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98ac230c-e662-4a44-ab53-76393a93388b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=AIN5-7 SE4 [3] Softwarequalitätssicherung",
+      "targets": [
+        ["linkText=AIN5-7 SE4 [3] Softwarequalitätssicherung", "linkText"],
+        ["css=.mod_n_odd > .regular", "css:finder"],
+        ["xpath=//a[contains(text(),'AIN5-7 SE4 [3] Softwarequalitätssicherung')]", "xpath:link"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/form/table/tbody/tr[2]/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lsf.htwg-konstanz.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=183152&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'AIN5-7 SE4 [3] Softwarequalitätssicherung')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46b4dd94-9261-41df-a026-fe1227872ffc",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=O - 201",
+      "targets": [],
+      "value": "O - 201"
+    }]
+  }, {
+    "id": "046e641c-c5e3-44ef-ac7b-fc02d81ef9e5",
+    "name": "02",
+    "commands": [{
+      "id": "95b6ebc7-94cb-4435-a116-64755d2d6018",
+      "comment": "",
+      "command": "open",
+      "target": "https://lsf.htwg-konstanz.de/qisserver/rds?state=user&type=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6de1c053-1001-49cd-a81e-2c0f5119767c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "449d16c3-72e3-4b75-8681-d47ad7e978c0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Suche nach Veranstaltungen",
+      "targets": [
+        ["linkText=Suche nach Veranstaltungen", "linkText"],
+        ["css=.menueListStyle:nth-child(3) > .auflistung", "css:finder"],
+        ["xpath=//a[contains(text(),'Suche nach Veranstaltungen')]", "xpath:link"],
+        ["xpath=//div[@id='makronavigation']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lsf.htwg-konstanz.de/qisserver/rds?state=change&type=5&moduleParameter=veranstaltungSearch&nextdir=change&next=search.vm&subdir=veranstaltung&_form=display&function=search&clean=y&category=veranstaltung.search&navigationPosition=lectures%2CsearchLectures&breadcrumb=searchLectures&topitem=lectures&subitem=searchLectures')]", "xpath:href"],
+        ["xpath=//ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Suche nach Veranstaltungen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb9c19ce-043d-4ff3-9a3a-502a4903ed71",
+      "comment": "",
+      "command": "click",
+      "target": "id=veranstaltung.dtxt",
+      "targets": [
+        ["id=veranstaltung.dtxt", "id"],
+        ["name=veranstaltung.dtxt", "name"],
+        ["css=#veranstaltung\\.dtxt", "css:finder"],
+        ["xpath=//input[@id='veranstaltung.dtxt']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/div/form/fieldset[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c48d918-daf8-4bb4-bd2c-9fdd71200d93",
+      "comment": "",
+      "command": "type",
+      "target": "id=veranstaltung.dtxt",
+      "targets": [
+        ["id=veranstaltung.dtxt", "id"],
+        ["name=veranstaltung.dtxt", "name"],
+        ["css=#veranstaltung\\.dtxt", "css:finder"],
+        ["xpath=//input[@id='veranstaltung.dtxt']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/div/form/fieldset[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Software Qualitätssicherung"
+    }, {
+      "id": "0f59c251-eb80-4f4a-b125-d47fb220543c",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_STG",
+      "targets": [
+        ["name=search_STG", "name"],
+        ["css=div:nth-child(11) > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='search_STG']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/div/form/fieldset[2]/div[9]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81d73e28-bfb0-49fb-95af-7030253dde04",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Angewandte Informatik (Bachelor), Abschluss 84,",
+      "targets": [
+        ["linkText=Angewandte Informatik (Bachelor), Abschluss 84,", "linkText"],
+        ["css=fieldset > div:nth-child(5) > .regular", "css:finder"],
+        ["xpath=//a[contains(text(),'Angewandte Informatik (Bachelor), Abschluss 84,')]", "xpath:link"],
+        ["xpath=(//a[@name='A'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/fieldset[2]/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lsf.htwg-konstanz.de/qisserver/rds?state=change&type=5&moduleParameter=veranstaltungSearch&nextdir=change&next=search.vm&subdir=veranstaltung&_form=display&topitem=lectures&subitem=searchLectures&function=search&field=STG&k_abstgv.abstgvnr=4511&idcol=k_abstgv.abstgvnr&idval=4511&purge=n&getglobal=n&text=Angewandte+Informatik+%28Bachelor%29%2C+Abschluss+84%2C')]", "xpath:href"],
+        ["xpath=//fieldset[2]/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Angewandte Informatik (Bachelor), Abschluss 84,')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42174a36-08fc-4430-bf09-bedd2262503f",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(19)",
+      "targets": [
+        ["css=input:nth-child(19)", "css:finder"],
+        ["xpath=(//input[@name='search_start'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/div/form/input[14]", "xpath:idRelative"],
+        ["xpath=//input[14]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e12be85b-3fc0-412c-9d2b-5f1ca9406dde",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=AIN5-7 SE4 [3] Softwarequalitätssicherung",
+      "targets": [
+        ["linkText=AIN5-7 SE4 [3] Softwarequalitätssicherung", "linkText"],
+        ["css=.mod_n_odd > .regular", "css:finder"],
+        ["xpath=//a[contains(text(),'AIN5-7 SE4 [3] Softwarequalitätssicherung')]", "xpath:link"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/form/table/tbody/tr[2]/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lsf.htwg-konstanz.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=183152&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'AIN5-7 SE4 [3] Softwarequalitätssicherung')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07122d03-f559-4451-a6b9-33643d1e46c1",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=O - 201",
+      "targets": [
+        ["linkText=O - 201", "linkText"],
+        ["css=table:nth-child(11) .mod_n_odd > .regular", "css:finder"],
+        ["xpath=//a[contains(text(),'O - 201')]", "xpath:link"],
+        ["xpath=//div[@id='wrapper']/div[6]/div[2]/form/table[2]/tbody/tr[2]/td[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lsf.htwg-konstanz.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&raum.rgid=12777')]", "xpath:href"],
+        ["xpath=//td[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'O - 201')]", "xpath:innerText"]
+      ],
+      "value": "O - 201"
+    }]
+  }],
+  "suites": [{
+    "id": "df5f15c6-4888-4846-826e-fbc92c27a93f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["396022be-3559-48af-a02b-2c26e7338232"]
+  }],
+  "urls": ["https://lsf.htwg-konstanz.de/"],
+  "plugins": []
+}
